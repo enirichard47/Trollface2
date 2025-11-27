@@ -461,11 +461,11 @@ export default function Index() {
                 ].map((stat, idx) => (
                   <div
                     key={idx}
-                    className="glass-effect backdrop-blur-xl p-6 text-center hover:border-primary/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-500/30 hover:-translate-y-3 hover:bg-white/15 animate-slide-up"
+                    className="glass-effect backdrop-blur-xl p-6 text-center hover:border-primary/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-500/30 hover:-translate-y-4 hover:bg-white/15 animate-slide-up hover:animate-bounce-wild"
                     style={{ animationDelay: stat.delay }}
                   >
-                    <p className={`text-4xl font-bold bg-gradient-to-r ${stat.gradient} text-transparent bg-clip-text group-hover:scale-125 group-hover:animate-bounce-slow transition-all duration-300 origin-center`}>{stat.value}</p>
-                    <p className="text-muted-foreground mt-2 group-hover:text-gray-200 transition-colors duration-300">{stat.label}</p>
+                    <p className={`text-4xl font-bold bg-gradient-to-r ${stat.gradient} text-transparent bg-clip-text group-hover:scale-150 group-hover:animate-flip transition-all duration-300 origin-center`}>{stat.value}</p>
+                    <p className="text-muted-foreground mt-2 group-hover:text-gray-200 transition-colors duration-300 group-hover:animate-wave" style={{ animationDuration: "1.5s" }}>{stat.label}</p>
                   </div>
                 ))}
               </div>
