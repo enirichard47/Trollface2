@@ -361,8 +361,8 @@ export default function Index() {
           </div>
 
           {/* Contract Address */}
-          <div className="glass-effect backdrop-blur-xl p-8 text-center group hover:border-cyan-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-400/20">
-            <p className="text-sm text-muted-foreground mb-3 group-hover:text-cyan-400 transition-colors duration-300">CONTRACT ADDRESS</p>
+          <div className="glass-effect backdrop-blur-xl p-8 text-center group hover:border-cyan-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-400/30 hover:bg-white/15 animate-fade-in">
+            <p className="text-sm text-muted-foreground mb-3 group-hover:text-cyan-400 transition-colors duration-300 font-semibold">CONTRACT ADDRESS</p>
             <div className="flex items-center justify-center gap-4">
               <code className="text-sm md:text-base font-mono glass-effect backdrop-blur-sm px-4 py-2 group-hover:border-primary/50 transition-all duration-300">
                 6Fvp7EhQZ9rowiDc212k2ySC4nZEPs2nyfLr8ZoxYJN5
