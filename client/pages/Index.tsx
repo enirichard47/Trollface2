@@ -371,10 +371,10 @@ export default function Index() {
               </code>
               <button
                 onClick={handleCopyCA}
-                className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group/btn"
+                className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-110 active:scale-95 relative overflow-hidden group/btn hover:animate-bounce-wild"
               >
-                <span className="relative z-10">Copy</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10 group-hover/btn:animate-glitch">Copy</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 group-hover/btn:animate-spin-wild"></div>
               </button>
             </div>
           </div>
