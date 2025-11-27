@@ -160,7 +160,7 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 bg-background">
+      <section id="about" className="py-20 px-4 gradient-background bg-gradient-to-b from-transparent via-purple-900/20 to-transparent">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-16">
             {/* Header */}
