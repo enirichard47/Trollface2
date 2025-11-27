@@ -106,11 +106,11 @@ export default function Index() {
             <div className="space-y-8 animate-slide-up">
               <div className="space-y-4">
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 text-transparent bg-clip-text animate-gradient-flow">
+                  <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 text-transparent bg-clip-text animate-gradient-flow animate-bounce-wild" style={{ animationDuration: "4s" }}>
                     Trollface2
                   </span>
                 </h1>
-                <p className="text-2xl text-cyan-400 font-bold animate-slide-in-from-left">
+                <p className="text-2xl text-cyan-400 font-bold animate-slide-in-from-left animate-pulse-wild" style={{ animationDuration: "3s" }}>
                   The Next Evolution in Meme Tokens
                 </p>
               </div>
