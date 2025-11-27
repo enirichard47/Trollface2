@@ -227,7 +227,7 @@ export default function Index() {
       </section>
 
       {/* Tokenomics Section */}
-      <section id="tokenomics" className="py-20 px-4 bg-card">
+      <section id="tokenomics" className="py-20 px-4 bg-gradient-to-b from-cyan-900/20 via-purple-900/30 to-transparent">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Tokenomics</h2>
