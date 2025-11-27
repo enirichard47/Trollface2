@@ -383,11 +383,18 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Troll Test</h2>
           <p className="text-xl text-muted-foreground mb-12">What's your troll level? Find out now!</p>
-          <button className="px-10 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-lg rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition transform hover:scale-105 inline-block">
-            Start Troll Test
+          <button
+            onClick={() => setIsTrollTestOpen(true)}
+            className="px-10 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-lg rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition transform hover:scale-105 active:scale-95 inline-block relative overflow-hidden group"
+          >
+            <span className="relative z-10">Start Troll Test</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
       </section>
+
+      {/* Troll Test Modal */}
+      <TrollTest isOpen={isTrollTestOpen} onOpenChange={setIsTrollTestOpen} />
 
       {/* Roadmap Section */}
       <section id="roadmap" className="py-20 px-4 bg-background">
