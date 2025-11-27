@@ -310,7 +310,7 @@ export default function Index() {
       </section>
 
       {/* How to Buy Section */}
-      <section id="howto" className="py-20 px-4 bg-background">
+      <section id="howto" className="py-20 px-4 gradient-background bg-gradient-to-b from-purple-900/20 via-transparent to-cyan-900/20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">How to Buy</h2>
