@@ -504,9 +504,9 @@ export default function Index() {
                 ))}
               </div>
 
-              <button className="w-full px-8 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 text-white font-bold rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group">
-                <span className="relative z-10">Join Our Discord</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <button className="w-full px-8 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 text-white font-bold rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-110 active:scale-95 relative overflow-hidden group hover:animate-bounce-wild hover:animate-rainbow-glow">
+                <span className="relative z-10 group-hover:animate-glitch">Join Our Discord</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:animate-spin-wild"></div>
               </button>
             </div>
           </div>
