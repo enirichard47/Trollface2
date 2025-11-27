@@ -397,7 +397,7 @@ export default function Index() {
       <TrollTest isOpen={isTrollTestOpen} onOpenChange={setIsTrollTestOpen} />
 
       {/* Roadmap Section */}
-      <section id="roadmap" className="py-20 px-4 bg-background">
+      <section id="roadmap" className="py-20 px-4 gradient-background bg-gradient-to-b from-cyan-900/20 via-purple-900/20 to-transparent">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Roadmap</h2>
