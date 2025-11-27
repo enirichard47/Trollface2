@@ -415,16 +415,16 @@ export default function Index() {
                 onMouseLeave={() => setHoveredRoadmap(null)}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-cyan-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                <div className="relative glass-effect backdrop-blur-xl p-8 h-full group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-purple-500/20 group-hover:-translate-y-2">
+                <div className="relative glass-effect backdrop-blur-xl p-8 h-full group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-purple-500/30 group-hover:-translate-y-3 group-hover:bg-white/15">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <div className="text-sm font-bold text-cyan-400 mb-2 group-hover:text-purple-400 transition-colors duration-300">{item.quarter}</div>
+                      <div className="text-sm font-bold text-cyan-400 mb-2 group-hover:text-purple-400 transition-colors duration-300 group-hover:scale-110">{item.quarter}</div>
                       <h3 className="text-2xl font-bold group-hover:text-cyan-300 transition-colors duration-300">{item.title}</h3>
                     </div>
                     <span
-                      className={`text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 group-hover:scale-110 ${
+                      className={`text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 group-hover:scale-125 group-hover:animate-bounce-slow ${
                         item.status === "IN PROGRESS"
-                          ? "bg-green-500/30 text-green-300 group-hover:bg-green-500/50"
+                          ? "bg-green-500/30 text-green-300 group-hover:bg-green-500/50 group-hover:shadow-lg group-hover:shadow-green-500/30"
                           : "bg-muted/50 text-muted-foreground group-hover:bg-muted/80"
                       }`}
                     >
