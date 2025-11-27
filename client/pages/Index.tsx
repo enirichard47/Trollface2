@@ -895,32 +895,6 @@ export default function Index() {
               <p className="text-sm text-muted-foreground">
                 �� 2025 Trollface2. All rights reserved. Not financial advice.
               </p>
-              <div className="flex gap-6">
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition"
-                >
-                  <span className="text-lg">𝕏</span>
-                </a>
-                <a
-                  href="https://discord.gg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition"
-                >
-                  <span className="text-lg">💬</span>
-                </a>
-                <a
-                  href="https://t.me"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition"
-                >
-                  <span className="text-lg">✈️</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
