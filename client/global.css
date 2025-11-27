@@ -1,0 +1,179 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme - Dark Crypto/Meme Token Theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 10 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 10 25% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 10 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 280 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 185 100% 50%;
+    --secondary-foreground: 10 25% 8%;
+
+    --muted: 10 25% 25%;
+    --muted-foreground: 210 20% 65%;
+
+    --accent: 280 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 10 25% 20%;
+    --input: 10 25% 20%;
+    --ring: 280 85% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 10 25% 10%;
+
+    --sidebar-foreground: 210 40% 98%;
+
+    --sidebar-primary: 280 85% 55%;
+
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 185 100% 50%;
+
+    --sidebar-accent-foreground: 10 25% 8%;
+
+    --sidebar-border: 10 25% 20%;
+
+    --sidebar-ring: 280 85% 55%;
+  }
+
+  .dark {
+    --background: 10 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 10 25% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 10 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 280 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 185 100% 50%;
+    --secondary-foreground: 10 25% 8%;
+
+    --muted: 10 25% 25%;
+    --muted-foreground: 210 20% 65%;
+
+    --accent: 280 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 10 25% 20%;
+    --input: 10 25% 20%;
+    --ring: 280 85% 55%;
+    --sidebar-background: 10 25% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 280 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 100% 50%;
+    --sidebar-accent-foreground: 10 25% 8%;
+    --sidebar-border: 10 25% 20%;
+    --sidebar-ring: 280 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-lg;
+  }
+
+  .premium-gradient {
+    @apply bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-cyan-500/20;
+  }
+
+  .premium-button {
+    @apply relative overflow-hidden group px-6 py-3 font-bold rounded-lg transition-all duration-300;
+  }
+
+  .premium-button::before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+    z-index: -1;
+  }
+
+  .shimmer-text {
+    background: linear-gradient(90deg, #fff 0%, #a855f7 50%, #fff 100%);
+    background-size: 200% auto;
+    animation: shimmer 2s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .floating-element {
+    @apply animate-float;
+  }
+
+  .glow-effect {
+    @apply shadow-lg shadow-purple-500/50;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .nav-link {
+    @apply relative text-muted-foreground hover:text-primary smooth-transition;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-cyan-400 group-hover:w-full transition-all duration-300;
+  }
+}
