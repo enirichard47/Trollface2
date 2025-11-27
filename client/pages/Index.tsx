@@ -411,20 +411,20 @@ export default function Index() {
             {roadmapItems.map((item) => (
               <div
                 key={item.id}
-                className="group relative animate-slide-up"
+                className="group relative animate-slide-up hover:animate-bounce-wild"
                 style={{ animationDelay: `${roadmapItems.indexOf(item) * 0.1}s` }}
                 onMouseEnter={() => setHoveredRoadmap(item.id)}
                 onMouseLeave={() => setHoveredRoadmap(null)}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-cyan-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                <div className="relative glass-effect backdrop-blur-xl p-8 h-full group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-purple-500/30 group-hover:-translate-y-3 group-hover:bg-white/15">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-cyan-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:animate-spin-wild" />
+                <div className="relative glass-effect backdrop-blur-xl p-8 h-full group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-purple-500/30 group-hover:-translate-y-4 group-hover:bg-white/15 group-hover:animate-pulse-wild">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <div className="text-sm font-bold text-cyan-400 mb-2 group-hover:text-purple-400 transition-colors duration-300 group-hover:scale-110">{item.quarter}</div>
-                      <h3 className="text-2xl font-bold group-hover:text-cyan-300 transition-colors duration-300">{item.title}</h3>
+                      <div className="text-sm font-bold text-cyan-400 mb-2 group-hover:text-purple-400 transition-colors duration-300 group-hover:scale-125 group-hover:animate-bounce-wild">{item.quarter}</div>
+                      <h3 className="text-2xl font-bold group-hover:text-cyan-300 transition-colors duration-300 group-hover:animate-wave" style={{ animationDuration: "2s" }}>{item.title}</h3>
                     </div>
                     <span
-                      className={`text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 group-hover:scale-125 group-hover:animate-bounce-slow ${
+                      className={`text-xs font-bold px-3 py-1 rounded-full transition-all duration-300 group-hover:scale-150 group-hover:animate-flip ${
                         item.status === "IN PROGRESS"
                           ? "bg-green-500/30 text-green-300 group-hover:bg-green-500/50 group-hover:shadow-lg group-hover:shadow-green-500/30"
                           : "bg-muted/50 text-muted-foreground group-hover:bg-muted/80"
@@ -433,7 +433,7 @@ export default function Index() {
                       {item.status}
                     </span>
                   </div>
-                  <p className="text-muted-foreground group-hover:text-gray-200 transition-colors duration-300">{item.description}</p>
+                  <p className="text-muted-foreground group-hover:text-gray-200 transition-colors duration-300 group-hover:animate-wave" style={{ animationDuration: "3s" }}>{item.description}</p>
                 </div>
               </div>
             ))}
