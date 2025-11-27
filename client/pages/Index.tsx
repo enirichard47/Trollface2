@@ -203,8 +203,8 @@ export default function Index() {
                     { label: "Liquidity", value: "BURNED", icon: "🔥" },
                     { label: "Governance", value: "Community", icon: "🤝" },
                   ].map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-4 pb-6 border-b border-white/10 last:border-b-0 last:pb-0 group hover:translate-x-1 transition-transform duration-300">
-                      <div className="text-3xl group-hover:scale-125 transition-transform duration-300 origin-left">{item.icon}</div>
+                    <div key={idx} className="flex items-start gap-4 pb-6 border-b border-white/10 last:border-b-0 last:pb-0 group hover:translate-x-2 transition-all duration-300 hover:bg-white/5 px-2 rounded-lg -mx-2">
+                      <div className="text-3xl group-hover:scale-125 group-hover:animate-bounce transition-all duration-300 origin-left">{item.icon}</div>
                       <div>
                         <p className="text-sm text-muted-foreground mb-1 group-hover:text-cyan-400 transition-colors">{item.label}</p>
                         <p className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 text-transparent bg-clip-text group-hover:from-cyan-400 group-hover:to-purple-400 transition-all">
