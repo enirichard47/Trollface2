@@ -78,10 +78,14 @@ interface TrollTestProps {
 }
 
 const getTrollLevel = (avg: number): { level: string; color: string } => {
-  if (avg >= 90) return { level: "LEGENDARY TROLL", color: "from-red-500 to-pink-500" };
-  if (avg >= 75) return { level: "ELITE TROLL", color: "from-purple-500 to-pink-500" };
-  if (avg >= 60) return { level: "EXPERIENCED TROLL", color: "from-purple-500 to-cyan-500" };
-  if (avg >= 40) return { level: "CASUAL TROLL", color: "from-cyan-500 to-blue-500" };
+  if (avg >= 90)
+    return { level: "LEGENDARY TROLL", color: "from-red-500 to-pink-500" };
+  if (avg >= 75)
+    return { level: "ELITE TROLL", color: "from-purple-500 to-pink-500" };
+  if (avg >= 60)
+    return { level: "EXPERIENCED TROLL", color: "from-purple-500 to-cyan-500" };
+  if (avg >= 40)
+    return { level: "CASUAL TROLL", color: "from-cyan-500 to-blue-500" };
   return { level: "NORMIE ALERT", color: "from-gray-500 to-slate-500" };
 };
 
@@ -112,7 +116,10 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
     onOpenChange(false);
   };
 
-  const averageScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b) / scores.length) : 0;
+  const averageScore =
+    scores.length > 0
+      ? Math.round(scores.reduce((a, b) => a + b) / scores.length)
+      : 0;
   const { level, color } = getTrollLevel(averageScore);
 
   return (
@@ -123,7 +130,9 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
             {/* Header */}
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <DialogTitle className="text-2xl md:text-3xl font-bold">Troll Test</DialogTitle>
+                <DialogTitle className="text-2xl md:text-3xl font-bold">
+                  Troll Test
+                </DialogTitle>
                 <span className="text-xs md:text-sm font-semibold px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full">
                   Question {currentQuestion + 1}/{questions.length}
                 </span>
@@ -138,7 +147,9 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
               <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden border border-white/20">
                 <div
                   className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 transition-all duration-500"
-                  style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+                  style={{
+                    width: `${((currentQuestion + 1) / questions.length) * 100}%`,
+                  }}
                 />
               </div>
             </div>
@@ -154,15 +165,21 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
                 {questions[currentQuestion].options.map((option, index) => (
                   <button
                     key={index}
-                    onClick={() => handleAnswer(questions[currentQuestion].trollLevel[index])}
+                    onClick={() =>
+                      handleAnswer(questions[currentQuestion].trollLevel[index])
+                    }
                     className="w-full p-4 text-left group relative glass-effect backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-2 animate-slide-up border-white/20 rounded-lg hover:bg-white/20 hover:animate-pulse-wild active:animate-bounce-wild"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-purple-400/50 group-hover:border-cyan-400 group-hover:bg-cyan-400/20 transition-all flex items-center justify-center mt-0.5 group-hover:scale-110">
-                        <span className="text-xs font-bold group-hover:text-cyan-300">{String.fromCharCode(65 + index)}</span>
+                        <span className="text-xs font-bold group-hover:text-cyan-300">
+                          {String.fromCharCode(65 + index)}
+                        </span>
                       </div>
-                      <span className="text-sm md:text-base group-hover:text-white transition-colors">{option}</span>
+                      <span className="text-sm md:text-base group-hover:text-white transition-colors">
+                        {option}
+                      </span>
                     </div>
                   </button>
                 ))}
@@ -173,22 +190,35 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
           <div className="space-y-8 animate-fade-in">
             {/* Results Header */}
             <div className="text-center space-y-4">
-              <DialogTitle className="text-3xl md:text-4xl font-bold animate-bounce-wild">Your Troll Level</DialogTitle>
-              <div className={`text-5xl md:text-6xl font-black bg-gradient-to-r ${color} text-transparent bg-clip-text animate-spin-wild`}>
+              <DialogTitle className="text-3xl md:text-4xl font-bold animate-bounce-wild">
+                Your Troll Level
+              </DialogTitle>
+              <div
+                className={`text-5xl md:text-6xl font-black bg-gradient-to-r ${color} text-transparent bg-clip-text animate-spin-wild`}
+              >
                 {averageScore}%
               </div>
-              <div className={`inline-block px-6 py-2 rounded-full font-bold text-white text-lg md:text-xl bg-gradient-to-r ${color} shadow-lg shadow-purple-500/30 animate-pulse-wild hover:scale-110 transition-all cursor-pointer`}>
+              <div
+                className={`inline-block px-6 py-2 rounded-full font-bold text-white text-lg md:text-xl bg-gradient-to-r ${color} shadow-lg shadow-purple-500/30 animate-pulse-wild hover:scale-110 transition-all cursor-pointer`}
+              >
                 {level}
               </div>
             </div>
 
             {/* Score Breakdown */}
             <div className="space-y-3">
-              <h4 className="font-semibold text-foreground mb-4">Question Breakdown:</h4>
+              <h4 className="font-semibold text-foreground mb-4">
+                Question Breakdown:
+              </h4>
               <div className="space-y-2 max-h-48 overflow-y-auto">
                 {scores.map((score, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 glass-effect rounded-lg border border-white/10 group hover:border-purple-500/30 transition-all">
-                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">Q{index + 1}</span>
+                  <div
+                    key={index}
+                    className="flex items-center justify-between p-3 glass-effect rounded-lg border border-white/10 group hover:border-purple-500/30 transition-all"
+                  >
+                    <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      Q{index + 1}
+                    </span>
                     <div className="flex items-center gap-2">
                       <div className="w-20 bg-white/10 rounded-full h-2 border border-white/20">
                         <div
@@ -196,7 +226,9 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
                           style={{ width: `${score}%` }}
                         />
                       </div>
-                      <span className="text-sm font-bold text-cyan-400 min-w-[3rem]">{score}%</span>
+                      <span className="text-sm font-bold text-cyan-400 min-w-[3rem]">
+                        {score}%
+                      </span>
                     </div>
                   </div>
                 ))}
@@ -207,27 +239,32 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
             <div className="glass-effect rounded-lg p-6 border border-purple-500/20 space-y-3 text-center">
               {averageScore >= 90 && (
                 <p className="text-base md:text-lg text-purple-300">
-                  You are an absolute LEGEND! The crypto world bows before your trolling mastery! 🔥
+                  You are an absolute LEGEND! The crypto world bows before your
+                  trolling mastery! 🔥
                 </p>
               )}
               {averageScore >= 75 && averageScore < 90 && (
                 <p className="text-base md:text-lg text-pink-300">
-                  Elite tier trolling energy detected! You belong in the hall of fame! 👑
+                  Elite tier trolling energy detected! You belong in the hall of
+                  fame! 👑
                 </p>
               )}
               {averageScore >= 60 && averageScore < 75 && (
                 <p className="text-base md:text-lg text-cyan-300">
-                  Solid troll game! You've got the skills, now go spread the chaos! 🚀
+                  Solid troll game! You've got the skills, now go spread the
+                  chaos! 🚀
                 </p>
               )}
               {averageScore >= 40 && averageScore < 60 && (
                 <p className="text-base md:text-lg text-blue-300">
-                  Not bad! You're on the path to trolling greatness. Keep practicing! 📈
+                  Not bad! You're on the path to trolling greatness. Keep
+                  practicing! 📈
                 </p>
               )}
               {averageScore < 40 && (
                 <p className="text-base md:text-lg text-slate-300">
-                  Welcome to crypto! Don't worry, you'll catch the troll vibes soon enough! 💪
+                  Welcome to crypto! Don't worry, you'll catch the troll vibes
+                  soon enough! 💪
                 </p>
               )}
             </div>
