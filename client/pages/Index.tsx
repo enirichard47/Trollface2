@@ -147,13 +147,14 @@ export default function Index() {
             </div>
 
             {/* Right Side - Troll Face Image */}
-            <div className="flex justify-center animate-float">
+            <div className="flex justify-center animate-float group">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full blur-2xl opacity-30 animate-glow-enhance"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full blur-2xl opacity-30 animate-glow-enhance group-hover:animate-rainbow-glow"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-all duration-300 animate-spin-wild"></div>
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F3dffce91ce63492db4fc785a21f16f5e%2F4ad910ba81da4490994926ca0ee51368?format=webp&width=800"
                   alt="Trollface"
-                  className="w-full max-w-md drop-shadow-2xl relative z-10 hover:drop-shadow-none transition-all duration-300"
+                  className="w-full max-w-md drop-shadow-2xl relative z-10 hover:drop-shadow-none transition-all duration-300 group-hover:animate-jello group-hover:scale-110"
                 />
               </div>
             </div>
