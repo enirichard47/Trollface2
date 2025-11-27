@@ -122,8 +122,8 @@ export default function Index() {
                   { icon: "🚀", title: "Community Driven", desc: "Governed by holders. Your voice matters.", delay: "0.2s" },
                 ].map((item, idx) => (
                   <div key={idx} className="space-y-3 animate-slide-up" style={{ animationDelay: item.delay }}>
-                    <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
-                      <span className="text-3xl group-hover:animate-bounce-slow">{item.icon}</span>
+                    <div className="flex items-start gap-3 group hover:translate-x-3 transition-all duration-300 hover:scale-105">
+                      <span className="text-3xl group-hover:animate-spin-wild group-hover:inline-block" style={{ animationDuration: "0.8s" }}>{item.icon}</span>
                       <div>
                         <p className="font-semibold text-foreground text-lg group-hover:text-primary transition-colors">{item.title}</p>
                         <p className="text-sm text-muted-foreground">{item.desc}</p>
