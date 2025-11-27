@@ -134,11 +134,11 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="px-8 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 text-white font-bold rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105 active:scale-95 relative overflow-hidden group">
+                <button className="px-8 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 text-white font-bold rounded-lg hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-110 active:scale-95 relative overflow-hidden group hover:animate-pulse-wild">
                   <span className="relative z-10">Buy Now</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 via-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:animate-spin-wild"></div>
                 </button>
-                <button className="px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary/10 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-400/20">
+                <button className="px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary/10 backdrop-blur-sm transition-all duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-400/20 hover:scale-110 hover:animate-bounce-wild group">
                   <a href="#about" className="block">
                     Learn Story
                   </a>
