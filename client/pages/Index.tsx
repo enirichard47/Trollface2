@@ -216,8 +216,8 @@ export default function Index() {
                 </div>
 
                 {/* Highlight Box */}
-                <div className="glass-effect backdrop-blur-xl p-6 text-center hover:border-cyan-400/50 transition-all duration-300 group hover:shadow-lg hover:shadow-cyan-400/20">
-                  <p className="text-muted-foreground italic group-hover:text-cyan-300 transition-colors duration-300">
+                <div className="glass-effect backdrop-blur-xl p-6 text-center hover:border-cyan-400/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-cyan-400/30 hover:bg-white/10 animate-fade-in">
+                  <p className="text-muted-foreground italic group-hover:text-cyan-300 transition-colors duration-300 group-hover:scale-105">
                     "This is more than a token. This is a movement. This is $TROLLFACE2."
                   </p>
                 </div>
