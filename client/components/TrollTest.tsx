@@ -173,11 +173,11 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
           <div className="space-y-8 animate-fade-in">
             {/* Results Header */}
             <div className="text-center space-y-4">
-              <DialogTitle className="text-3xl md:text-4xl font-bold">Your Troll Level</DialogTitle>
-              <div className={`text-5xl md:text-6xl font-black bg-gradient-to-r ${color} text-transparent bg-clip-text animate-float`}>
+              <DialogTitle className="text-3xl md:text-4xl font-bold animate-bounce-wild">Your Troll Level</DialogTitle>
+              <div className={`text-5xl md:text-6xl font-black bg-gradient-to-r ${color} text-transparent bg-clip-text animate-spin-wild`}>
                 {averageScore}%
               </div>
-              <div className={`inline-block px-6 py-2 rounded-full font-bold text-white text-lg md:text-xl bg-gradient-to-r ${color} shadow-lg shadow-purple-500/30`}>
+              <div className={`inline-block px-6 py-2 rounded-full font-bold text-white text-lg md:text-xl bg-gradient-to-r ${color} shadow-lg shadow-purple-500/30 animate-pulse-wild hover:scale-110 transition-all cursor-pointer`}>
                 {level}
               </div>
             </div>
