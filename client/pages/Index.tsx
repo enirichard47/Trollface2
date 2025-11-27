@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { TrollTest } from "@/components/TrollTest";
 
 export default function Index() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
   const [hoveredRoadmap, setHoveredRoadmap] = useState<string | null>(null);
+  const [isTrollTestOpen, setIsTrollTestOpen] = useState(false);
 
   const handleCopyCA = () => {
     const ca = "6Fvp7EhQZ9rowiDc212k2ySC4nZEPs2nyfLr8ZoxYJN5";
