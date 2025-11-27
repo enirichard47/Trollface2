@@ -388,10 +388,10 @@ export default function Index() {
           <p className="text-xl text-muted-foreground mb-12">What's your troll level? Find out now!</p>
           <button
             onClick={() => setIsTrollTestOpen(true)}
-            className="px-10 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-lg rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition transform hover:scale-105 active:scale-95 inline-block relative overflow-hidden group"
+            className="px-10 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-lg rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition transform hover:scale-125 active:scale-95 inline-block relative overflow-hidden group hover:animate-bounce-wild hover:rainbow-glow-animation"
           >
-            <span className="relative z-10">Start Troll Test</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <span className="relative z-10 group-hover:animate-glitch">Start Troll Test</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:animate-spin-wild"></div>
           </button>
         </div>
       </section>
