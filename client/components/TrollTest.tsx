@@ -155,7 +155,7 @@ export function TrollTest({ isOpen, onOpenChange }: TrollTestProps) {
                   <button
                     key={index}
                     onClick={() => handleAnswer(questions[currentQuestion].trollLevel[index])}
-                    className="w-full p-4 text-left group relative glass-effect backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-1 animate-slide-up border-white/20 rounded-lg hover:bg-white/20"
+                    className="w-full p-4 text-left group relative glass-effect backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-2 animate-slide-up border-white/20 rounded-lg hover:bg-white/20 hover:animate-pulse-wild active:animate-bounce-wild"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="flex items-start gap-3">
