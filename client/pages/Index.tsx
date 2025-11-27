@@ -379,7 +379,7 @@ export default function Index() {
       </section>
 
       {/* Troll Test Section */}
-      <section className="py-20 px-4 bg-card">
+      <section className="py-20 px-4 bg-gradient-to-b from-pink-900/20 to-purple-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Troll Test</h2>
           <p className="text-xl text-muted-foreground mb-12">What's your troll level? Find out now!</p>
