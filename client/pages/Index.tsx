@@ -195,8 +195,8 @@ export default function Index() {
               </div>
 
               {/* Right Side - Token Info */}
-              <div className="space-y-6 animate-slide-in-from-right">
-                <div className="glass-effect backdrop-blur-xl p-8 space-y-6 hover:border-primary/50 transition-all duration-300">
+            <div className="space-y-6 animate-slide-in-from-right">
+              <div className="glass-effect backdrop-blur-xl p-8 space-y-6 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/30 hover:bg-white/15">
                   {[
                     { label: "Total Supply", value: "1B Tokens", icon: "📊" },
                     { label: "Tax", value: "0%", icon: "✨" },
