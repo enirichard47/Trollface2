@@ -349,8 +349,8 @@ export default function Index() {
                 onMouseLeave={() => setHoveredStep(null)}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-cyan-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                <div className="relative glass-effect backdrop-blur-xl p-8 h-full group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-purple-500/20 group-hover:-translate-y-2">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-xl font-bold text-white mb-6 group-hover:scale-125 transition-transform duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/50">
+                <div className="relative glass-effect backdrop-blur-xl p-8 h-full group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-purple-500/30 group-hover:-translate-y-3 group-hover:bg-white/15">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-xl font-bold text-white mb-6 group-hover:scale-125 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-purple-500/50 group-hover:rotate-6">
                     {item.step}
                   </div>
                   <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-300 transition-colors duration-300">{item.title}</h3>
