@@ -490,10 +490,10 @@ export default function Index() {
                     href={`https://${social.label.toLowerCase().split('/')[0]}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 glass-effect backdrop-blur-xl hover:border-primary/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 hover:bg-white/15 animate-slide-up"
+                    className="flex items-center gap-4 p-4 glass-effect backdrop-blur-xl hover:border-primary/50 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-3 hover:bg-white/15 animate-slide-up hover:animate-bounce-wild"
                     style={{ animationDelay: social.delay }}
                   >
-                    <div className={`w-12 h-12 bg-gradient-to-r ${social.color} rounded-lg flex items-center justify-center text-xl group-hover:shadow-2xl group-hover:scale-110 transition-all duration-300 group-hover:animate-bounce-slow`}>
+                    <div className={`w-12 h-12 bg-gradient-to-r ${social.color} rounded-lg flex items-center justify-center text-xl group-hover:shadow-2xl group-hover:scale-125 transition-all duration-300 group-hover:animate-spin-wild group-hover:text-2xl`}>
                       {social.icon}
                     </div>
                     <div>
